@@ -1,6 +1,7 @@
 package com.edu.upeu.navegationjpc.ui.presentation.component
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
@@ -28,7 +29,8 @@ fun BottomNavigationBar(navController: NavHostController) {
         BottomNavItem("Home", "home", Icons.Default.Home),
         BottomNavItem("Profile", "profile",Icons.Default.Person),
         BottomNavItem("Settings", "settings",Icons.Default.Settings),
-        BottomNavItem("Calc", "calc",Icons.Default.Settings)
+        BottomNavItem("Calc", "calc",Icons.Default.Settings),
+        BottomNavItem("QR", "barcode",Icons.Default.Face)
     )
     // Estado para gestionar el elemento seleccionado
     var selectedItem by remember { mutableStateOf("home") }

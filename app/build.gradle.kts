@@ -60,6 +60,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.camera.view)
+    //implementation(libs.play.services.mlkit.barcode.scanning)
+    implementation("com.google.mlkit:barcode-scanning:17.2.0")
+    implementation(libs.play.services.mlkit.barcode.scanning)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.scenecore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,6 +73,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.google.guava:guava:30.1-android")
+//    implementation("com.google.accompanist:accompanist-permissions:0.28.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.23.0")
+
 
     implementation("androidx.navigation:navigation-compose:2.8.9")
 }
